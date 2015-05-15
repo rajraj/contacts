@@ -1,0 +1,17 @@
+<h2>Show contact</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @contact.name %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @contact.phone %>
+  </li>
+
+</ul>
+
+<%= link "Back", to: contact_path(@conn, :index) %>
