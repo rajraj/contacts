@@ -4,7 +4,7 @@ use Mix.Config
 # you likely want to automate and keep it away from
 # your version control system.
 config :contacts, Contacts.Endpoint,
-  secret_key_base: "kYFN3wfl4rDe5ulf7r/RecTfbPscu9EuLYuzvC3OpBc/pIeGK4o5UErf5XUI9Zaz"
+  secret_key_base: System.get_env("SESSION_SECRET")
 
 # Configure your database
 config :contacts, Contacts.Repo,
