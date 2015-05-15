@@ -9,7 +9,5 @@ config :contacts, Contacts.Endpoint,
 # Configure your database
 config :contacts, Contacts.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "contacts_prod",
+  url: System.get_env("DATABASE_URL"),
   size: 20 # The amount of database connections in the pool
