@@ -6,7 +6,7 @@ use Mix.Config
 config :contacts, Contacts.Endpoint,
   secret_key_base: System.get_env("SESSION_SECRET")
 
-config :contacts, :database,
+config :contacts, Contacts.Repo,
   url: System.get_env("DATABASE_URL")
 
 # Configure your database
